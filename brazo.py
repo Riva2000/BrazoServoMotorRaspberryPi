@@ -70,5 +70,8 @@ try:
             time.sleep(2)
             print("soltar")
 except KeyboardInterrupt:         #Si el usuario pulsa CONTROL+C entonces...
-    p.stop()                      #Detenemos el servo 
+    sm.stop()                      #Detenemos el servo
+    sm3.stop()
+    smp.stop()
+    smpg.stop()
     GPIO.cleanup()                #Limpiamos los pines GPIO de la Raspberry y cerramos el script
